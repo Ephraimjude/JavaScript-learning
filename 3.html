@@ -1,0 +1,521 @@
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>7wise</title>
+        <link rel="stylesheet" href="3.css">
+        <link rel="stylesheet" href="https://fonts.google.com/">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        rel="stylesheet">
+        <script src="https://kit.fontawesome.com/c1ffd432ab.js" crossorigin="anonymous"></script>
+        <script>
+            function mult(value) {
+  var x ;
+  x = 2 * value;
+
+  document.getElementById('amountconverted').value*x;
+}
+        </script>
+    </head>
+    <body>
+        <nav>
+            <input type="checkbox" id="menu-toggle" class="hamburger-menu">
+            <label for="menu-toggle" class="menu-btn">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </label>
+            <ul class="logo-side" id="logo-side">
+                <li class="logo"><a href="#"><img src="logo PNG.webp" alt="logo"></li>
+                <li class="lg-personal"><a href="#">Personal</a></li>
+                <li class="lg-business"><a href="#">Business</a></li>
+            </ul>
+            <ul class="non-logo-side" id="non-logo-side">
+                <li><a href="#">Payments</a>
+                    <ul>
+                        <img src="currency.webp" alt="small-currency">
+                            <p>Payments</p>
+                            <p class="p-explain">Discover how 300,000+ business customers<br>
+                            globally make and recieve international<br>
+                            payments.</p>
+                        <li><a href="#">Pay Invoices</a></li>
+                        <li><a href="#">Recieve money</a></li>
+                        <li><a href="#">Batch payments</a></li>
+                        <li><a href="#">Payroll</a></li>
+                        <li><a href="#">Track expenses</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Cards</a>
+                    <ul>
+                        <img src="cards.webp" alt="cards">
+                        <p>Cards</p>
+                        <p class="c-explain">Learn about Wise Business debit cards and how<br>
+                        to set your team up with expense cards.<br>
+                        payments.</p>
+                    <li><a href="#">Debit cards</a></li>
+                    <li><a href="#">Cards for employees</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Platform</a>
+                    <ul>
+                        <img src="briefcase.webp" alt="briefcase">
+                        <p>Platform</p>
+                        <p class="p-explain">Discover how to intergrate Wise Business with a<br>
+                        range of software, apps and tools.</p>
+                        <li><a href="#">API integrations</a></li>
+                        <li><a href="#">App Marketplace</a></li>
+                        <li><a href="#">Bank integrations</a></li>
+                    </ul>
+                    </li>
+                    <li><a href="#">Fees</a>
+                    <ul>
+                        <img src="fees.png" alt="fees">
+                        <p>Fees</p>
+                        <p class="f-explain">Get the information you need to know about our<br>
+                        pricing, exchange rates and fees.</p>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Mid-market exchange rate</a></li>
+                    </ul>
+                    </li>
+                    <li><a href="#">Help</a>
+                        <ul>
+                            <img src="speech bubble.webp" alt="bubble">
+                            <p>Help</p>
+                            Find answers to common questions. Get the<br>
+                            information and support you are looking for.
+                            <li><a href="#">Contact support</a></li>
+                            <li><a href="#">Contact sales</a></li>
+                            <li><a href="#">Help center</a></li>
+                        </ul>
+                        </li>
+                    <li class="locale">
+                        <div class="language-menu">
+                            <div class="language-menu-icon">
+                              <img src="https://via.placeholder.com/50" alt="Language icon">
+                            </div>
+                            <div class="language-menu-content">
+                              <form>
+                                <label for="country">Select Country:</label>
+                                <select name="countries" id="country">
+                                  <option value="USA">US FLAG</option>
+                                  <option value="Canada">Canada Flag</option>
+                                  <option value="UK">UK Flag</option>
+                                  <option value="Germany">Germany Flag</option>
+                                  <option value="France">France Flag</option>
+                                  <option value="Spain">Spain Flag</option>
+                                  <option value="Nigeria">Nigeria Flag</option>
+                                </select>
+                                <br>
+                                <label for="language">Select Language:</label>
+                                <select name="languages" id="language">
+                                  <option value="en">EN</option>
+                                  <option value="fr">FR</option>
+                                  <option value="de">DE</option>
+                                  <option value="es">ES</option>
+                                  <option value="ig">IG</option>
+                                </select>
+                                <br>
+                                <button type="submit">Confirm Change</button>
+                              </form>
+                            </div>
+                          </div>
+                          
+                    </li>
+                    <li class="login"><a href="#">Log in</a></li>
+                    <li class="reg"><a href="#">Register</a></li>
+                    </ul>
+        </nav>
+                <div class="intro-container">
+                    <div class="body-intro" id="intro">
+                        <h1>TAKE YOUR BUSINESS TO NEW <br>PLACES</h1>
+                    </div>
+                    <div class="body-intro-promo" id="intro-promo">
+                        Sign up for the fast, easy international business account<br>
+                        that saves you money wherever you to use it
+                    </div>
+                    <div class="buttons-creating-sales" id="create-sales-button">
+                        <button class="create-account" id="create"><a href="#">Create account</a></button>
+                        <button class="contact-sale" id="sales-contact"><a href="#">Contact sales</a></button>
+                    </div>
+                    <div class="intro-img" id="int-img">
+                        <img src="uss.webp" alt="uss">
+                    </div>
+                </div>
+                <div class="money-converter">
+                    <div class="container-money">
+                        <div class="converter-container">
+                            <div class="currency-converter" id="converter">
+                                <label for="amount">You send exactly</label><br>
+                                <div class="input-container">
+                                    <input type="number" name="" placeholder="Amount" onkeyup="mult(this.value);">
+                                    <select id="currency" name="currency">
+                                    <option value="EUR">EUR</option>
+                                    <option value="GBP">GBP</option>
+                                    <option value="INR">INR</option>
+                                    <option value="USD">USD</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <ul>
+                                <li>
+                                    <span class="transfer-fee"></span>
+                                    <div class="transfer-fee-breakdown">
+                                        <span class="transfer-fee-breakdown-left">
+                                            <input type="number" class="f-input" placeholder="" readonly>
+                                        </span>
+                                        <span class="transfer-fee-breakdown-right">
+                                        <span class="fee-btn">
+                                            <button class="fee-drop-down">
+                                                <span class="drop-down-explain">
+                                                    Wire transfer fee
+                                                </span>
+                                            </button>
+                                        </span>
+                                        </span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="our-fee"></span>
+                                    <div class="our-fee-breakdown">
+                                        <span class="our-fee-breakdown-left"><input type="number" class="f-input" placeholder="" readonly></span>
+                                        <span class="our-fee-breakdown-right">Our fee</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="total-amount"></span>
+                                    <div class="total-amount-breakdown">
+                                        <span class="total-amount-left"><input type="number" class="f-input" placeholder="" readonly></span>
+                                        <span class="total-amount-right">Total fee</span>
+                                    </div>
+                                </li>
+                                <hr class="GDLINE">
+                                <li>
+                                    <div class="total-amount-converted-breakdown">
+                                        <span class="total-amount-converted-left"><span class="total-amount-to-convert">
+                                        <span><input type="number" class="f-input" placeholder="" readonly></span>
+                                    </span></span>
+                                        <span class="total-amount-converted-right">Total amount we'll convert</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="rate">
+                                        <span>*</span>
+                                    </span>
+                                    <div class="rate-breakdown">
+                                        <span class="rate-breakdown-left">
+                                            <input type="number" class="f-input" placeholder="" readonly>
+                                        </span>
+                                        <span class="rate-breakdown-right">
+                                            <span class="rate-inline">
+                                                <button class="rate-breakdown-btn">
+                                                    <span class="rate-breakdown-btn-text">Guaranteed rate (8h)</span>
+                                                </button>
+                                            </span>
+                                        </span>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="money-converted" id="converted">
+                                <label for="amount">Recipient gets</label><br>
+                                <div class="input-container-sent">
+                                    <input type="number" name="" placeholder="Amount" id="amount-converted" readonly>
+                                    <select id="currency" name="currency">
+                                    <option value="EUR">EUR</option>
+                                    <option value="GBP">GBP</option>
+                                    <option value="INR">INR</option>
+                                    <option value="USD">USD</option>
+                                    </select>
+                                </div>
+                            </div>                        
+                        </div>
+                        <div class="converter-explain">
+                            <p>Payments with more bang for your <br>baht, yen and euro</p>
+                            Make international payments and <a href="#">save up to 2x with Wise.</a> 
+                            Choose from 70+ countries and pay overseas staff or 
+                            suppliers, with <a href="#">no hidden fees or exchange rate markups.</a>
+                            <div class="converter-btn">
+                            <a href="#"><input type="button" value="Pay Invoices" class="converter-pay-btn"></a>
+                            <a href="#"><input type="button" value="View pricing" class="converter-price-btn"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lock-key-house">
+                    <div class="lock-key-house-container">
+                        <div class="lock">
+                            <span class="material-icons">lock</span><br>
+                            <a href="#">Licensed as Money Transmitter<br> in 48 States</a>
+                        </div>
+                        <div class="key">
+                            <span class="material-icons">key</span><br>
+                            Used by 300,000+ businesses<br> each quarter
+                        </div>
+                        <div class="house">
+                            <span class="material-icons">house</span><br>
+                            <a href="#">We safeguard your money with top<br> financial institutions</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="receive-money">
+                    <div class="receive-money-par">
+                        <p class="rm-h">Accounts that help you <br>get paid faster</p>
+                        <p>Set up local account details for your business in any of 10<br>
+                            currencies. Then let overseas customers use them to pay<br>
+                            you from wherever they are at the same speed as someone who is<br>
+                            just across town.</p>
+                        <a href="#"><input type="button" value="Explore faster ways to get paid" class="recieve-money-input"></a>
+                    </div>
+                    <div class="recieve-money-img">
+                        <img src="received.webp" alt="received">
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="card-img">
+                        <img src="business card.webp" alt="cards">
+                    </div>
+                    <div class="cards-par">
+                        <p class="c-h">50+ currencies. 170+ <br> 
+                            countries. All in one card</p>
+                        <p>Give your team business debit cards to use overseas without <br> 
+                            foreign currency transaction fees. Set spending limits on each <br> 
+                            card and easily track card activity all in one place.</p>
+                        <div class="cards-button">
+                        <a href="#"><input type="button" value="Explore business debit cards" class="cards-btn"></a>
+                        <a href="#"><input type="button" value="View pricing" class="pricing-btn"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="app-marketplace">
+                    <div class="app-marketplace-par">
+                        <p class="am-h">Works with the
+                            software that works <br> 
+                            for you
+                        </p>
+                        <p>Easily connect to your favourite accounting software and save <br> 
+                            time on admin. Choose from Xero, QuickBooks, FreeAgent and <br> 
+                            more.
+                        </p>
+                        <a href="#"><input type="button" value="View apps and software" class="market-btn"></a>
+                    </div>
+                    <div class="marketplace-img">
+                        <img src="accounting.webp" alt="accounting">
+                    </div>
+                </div>
+                <div class="ads">   
+                    <div class="ads-container">
+                        <span class="a-h">More ways we can help your business</span>
+                        <div class="ads-top">
+                        <div class="ads-batch">
+                            <h3>BATCH-PAY UP TO <br>
+                                1,000 PEOPLE
+                            </h3>
+                            <p>Take a break from data entry. Just upload a <br>
+                                spreadsheet for each transfer and make one<br>
+                                payment, we do the rest.
+                            </p>
+                        </div>
+                        <div class="ads-save">
+                            <h3>SAVE UP TO 2X ON OVERSEAS PAYMENTS
+                            </h3>
+                            <p>Send money internationally <br>
+                            with Wise and save up to 2x <br>
+                            <a href="#">compared with other well-<br>known providers.</a></p>
+                        </div>
+                        </div>
+                        <div class="ads-bottom">
+                        <div class="ads-bespoke">
+                            <h3>SET BESPOKE ACCESS FOR YOUR TEAM</h3>
+                            <p>Decide who in your team<br>
+                                can view which accounts.<br>
+                                Set permission levels for<br>
+                                what they can see.
+                            </p>
+                        </div>
+                        <div class="ads-oneplace">
+                            <h3>EVERYTHING IN ONE<br>
+                                PLACE
+                            </h3>
+                            <p>View 50+ currencies from one easy to use account.<br>
+                                Move money between them in seconds at the mid<br>
+                                market exchange rate. This and everything else<br>
+                                Wise Business is covered by our<br> <a href="#">terms and conditions.</a></p>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="security">
+                    <div class="security-container">
+                        <div class="security-intro">
+                            <h4>Disappoint thieves</h4>
+                            <p>We help over 15 million people move $10 billion
+                                every month, here's how we make sure it's safe.</p>
+                            <a href="#"><input type="button" value="Learn how we protect your money"></a>
+                        </div>
+                        <div class="security-img">
+                            <img src="lock.webp" alt="lock">
+                        </div>
+                    </div>
+                </div>
+                <div class="lock2-phone-house">
+                    <div class="l-p-h-big-c">
+                        <div class="l-p-h-container">
+                            <div class="lock2">
+                                <span class="material-icons">lock</span>
+                                <p>Our dedicated fraud and security teams<br> work to keep your money safe</p>
+                            </div>
+                            <div class="phone">
+                                <span class="material-icons">smartphone</span>
+                                <p>We use 2-factor authentification to <br>protect your account</p>
+                            </div>
+                            <div class="bank">
+                                <span class="material-icons">account_balance</span>
+                                <p>We hold your money with established<br> financial institutions</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimony">
+                    <div class="testimony-big-container">
+                        <h3>DON'T TAKE OUR WORD FOR IT</h3>
+                        <p class="t-par">With 180,000+ Trustpilot reviews, our average score is 4.4 out of 5.</p>
+                        <div class="testimony-container">
+                            <div class="MA-testimony">
+                                <span class="material-icons">star</span>
+                                <span class="material-icons">star</span>
+                                <span class="material-icons">star</span>
+                                <span class="material-icons">star</span>
+                                <span class="material-icons">star</span>
+                                <p>"Doing an overseas business and banking through Wise is the best combination indeed."</p>
+                                <p class="name">Mohamad Alkabbani</p>
+                            </div>
+                            <div class="MV-testimony">
+                                <span class="material-icons">star</span>
+                                <span class="material-icons">star</span>
+                                <span class="material-icons">star</span>
+                                <span class="material-icons">star</span>
+                                <span class="material-icons">star</span>
+                                <p>"I love how i can use my Wise account to pay any American contractors that i have..."</p>
+                                <p class="name">Mike Vardy</p>
+                            </div>
+                            <div class="A-testimony">
+                                <span class="material-icons">star</span>
+                                <span class="material-icons">star</span>
+                                <span class="material-icons">star</span>
+                                <span class="material-icons">star</span>
+                                <span class="material-icons">star</span>
+                                <p>"...would confidently recommend it to anyone looking for a cost-effective way to transfer money internationally.”</p>
+                                <p class="name">Andrew</p>
+                            </div>
+                        </div>
+                            <a href="#"><input type="button" value="Read more Trustpilot reviews"></a>
+                    </div>
+                </div>
+                <div class="no-hidden-fees">
+                    <div class="n-h-f-container">
+                        <h3>NO HIDDEN FEES OR MONTHLY SUBSCRIPTION</h3>
+                        <p>Open and account for free. <a href="#">Only pay for what you use</a></p>
+                        <a href="#"><input type="button" value="Get set up in minutes"></a>
+                    </div>
+                </div>
+                <div class="mission">
+                    <div class="mission-big-c">
+                        <div class="mission-container">
+                            <div class="mission-statements">
+                                <h3>MEET MONEY WITHOUT<br> BORDERS</h3>
+                                <p class="mission-statement">
+                                    Our dream is for businesses to be able to transact anywhere 
+                                    seamlessly. That means money without borders: moving it instantly, 
+                                    transparently, conveniently, and — eventually — for free.
+                                </p>
+                            </div>
+                            <div class="mission-img-par">    
+                                <img src="women.webp" alt="business-women" class="mission-img">
+                                <p>
+                                    The Wise Business account is the ultimate way to manage money
+                                    globally. It's made for the world. And it's built to save you money
+                                    and time, so you can spend more time focusing on growing your business.
+                                </p>
+                                <a href="#"><input type="button" value="Learn about our Mission"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wise-summary">
+                    <div class="wise-summary-container">
+                        <div class="slogo">
+                            <span class="slogo"><img src="logo PNG.webp" alt="logo"></span>
+                        </div>
+                        <div class="company-link">
+                                <p>Company and team</p>
+                                <a href="#">Company and team</a><br>
+                                <a href="#">Press</a><br>
+                                <a href="#">Careers</a><br>
+                                <a href="#">Service status</a><br>
+                                <a href="#">Investors relations</a><br>
+                                <a href="#">Mission roadmap</a><br>
+                                <a href="#">Affiliates and partnerships</a><br>
+                                <a href="#">Help centre</a>
+                        </div>
+                        <div class="product-link">
+                            <p>Wise Products</p>
+                            <a href="#">International money transfer</a><br>
+                            <a href="#">Wise account</a><br>
+                            <a href="#">International debit card</a><br>
+                            <a href="#">Travel money card</a><br>
+                            <a href="#">Large amount transfer</a><br>
+                            <a href="#">Recieve money</a><br>
+                            <a href="#">Wise platform</a><br>
+                            <a href="#">Wise Business</a><br>
+                            <a href="#">Business debit card</a><br>
+                            <a href="#">Mass payments</a>
+                        </div>
+                        <div class="resource-link">
+                            <p>Resources</p>
+                            <a href="#">News and blog</a><br>
+                            <a href="#">Currency converter</a><br>
+                            <a href="#">Swift/BIC codes</a><br>
+                            <a href="#">IBAN codes</a><br>
+                            <a href="#">Rate alerts</a><br>
+                            <a href="#">Compare exchange rates</a><br>
+                            <a href="#">Invoice generator</a><br>
+                            <a href="#">Business Calculators</a>
+                        </div>
+                        <div class="social-link">
+                            <p>Follow us</p>
+                            <a href="#"><span class="material-icons">facebook</span></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <hr class="footer-line">
+                <div class="wise-footer">
+                    <div class="wise-footer-container">
+                        <div class="footer-logo">
+                            <a href="#"><img src="logo PNG.webp" alt="logo">
+                        </div>
+                        <div class="footer-legal">
+                            <a href="#">Legal</a><br>
+                            <a href="#">Country site map</a>
+                        </div>
+                        <div class="footer-privacy">
+                            <a href="#">Privacy policy</a><br>
+                            <a href="#">Modern slavery statement</a>
+                        </div>
+                        <div class="footer-cookie">
+                            <a href="#">Cookie Policy</a>
+                        </div>
+                    </div>
+                </div>
+                <footer>
+                    <div class="footer-container">
+                        <p>&copy Wise Us inc 2023</p>
+                        Wise US Inc is authorized to operate in <a href="#">most states.</a> In the other states, the program is sponsored
+                        by Community Federal Savings Bank, to which we're a service provider.
+                    </div>
+                </footer>
+        <script src="3.js"></script>
+    </body>
+    </html>
