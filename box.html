@@ -3,17 +3,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Box</title>
+    <title>Sign Up</title>
     <link rel="stylesheet" href="box.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        rel="stylesheet">
 </head>
 <body>
-    <div class="box">
-    <label for="amount-input">The amount you wish to send:</label>
-    <input type="number" id="amount-input">
-    <button id="send-button">Send</button>
-    <label for="sent-amount-input">Amount sent:</label>
-    <input type="number" id="sent-amount-input" disabled>
-</div>
-<script src="box.js"></script>
+    <span class="background">
+        <span class="centering">
+            <form action="signin" class="my-form">
+                <div class="logo">
+                    <img src="sign-up-logo.jfif" alt="">
+                </div>
+                <div class="signup">
+                    Sign Up!
+                </div>
+                <!-- form -->
+                <div class="signup-options">
+                    <div class="google-signup">
+                        <a href="#"><input type="button" value="Use Google" class="google-add"></a>
+                    </div>
+                    <div class="facebook-signup">
+                        <a href="#"><input type="button" value="Use Facebook" class="facebook-add"></a>
+                    </div>
+                </div>
+                <div class="other-options">
+                    <h3>OR</h3>
+                </div>
+                <div class="form">
+                    <form>
+                        <label for="name">Email</label>
+                        <input id="email" type="text" class="email" placeholder="Your Email" required>
+                        <label for="password">Password</label>
+                        <input id="passwrd" type="password" class="password" placeholder="Your New Password" minlength="8" maxlength="">
+
+                        <label for="password">Repeat Password</label>
+                        <input id="repasswd" type="password" class="confirm-password" placeholder="Repeat Your New Password" onkeyup="hidden"><br>
+
+                        <input type="submit" value="Sign-Up" class="input-signup" id="input-signup">
+
+                        <div class="form-par">
+                        <p>By registering you agree to our <a href="#">Terms</a> and <a href="#">Privacy</a></p>
+                        <p>Already have an account?</p>
+                        <a href="#">Sign-In</a>
+                        </div>
+                    </form>
+                </div>
+            </form>
+        </span>
+    </span>
+<script src="box.js" async></script>
 </body>
 </html>

@@ -1,20 +1,22 @@
-document.addEventListener('DOMContentLoaded', function() {
-    var amountInput = document.getElementById('amount-input');
-    var sendButton = document.getElementById('send-button');
-    var sentAmountInput = document.getElementById('sent-amount-input');
-  
-    sendButton.addEventListener('click', function() {
-      var amount = parseFloat(amountInput.value);
-      var fees = calculateFees(amount);
-      var sentAmount = amount - fees;
-      sentAmountInput.value = sentAmount.toFixed(2);
-    });
-  
-    function calculateFees(amount) {
-      // Your fee calculation logic goes here
-      
-      // Replace this with your own calculation
-      return amount * 0.1;
-    }
-  });
-  
+let loginForm = document.querySelector("form");
+let email = document.getElementById("email");
+let password = document.getElementById("passwrd");
+let confirmpassword = document.getElementById("repasswd");
+
+loginForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  console.log('email:', email.value);
+  console.log('password:', password.value);
+});
+
+function onChange() {
+  if (confirmpassword.value === password.value) {
+    confirmpassword.setCustomValidity('');
+  } else {
+    confirmpassword.setCustomValidity('Password do not match');
+  }
+}
+
+password.addEventListener('change', onChange);
+confirmpassword.addEventListener('change', onChange);

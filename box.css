@@ -1,21 +1,133 @@
-.box {
-    width: 300px;
-    padding: 20px;
-    border: 1px solid #ccc;
-    text-align: center;
-  }
+.body {
+  margin: 0;
+  padding: 0;
+}
+
+.centering{
+  display: flex;
+  justify-content:center;
+  align-items: center !important;
+  flex-direction: column;
+}
+
+.logo img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75px;
+  height: 75px;
+  padding: 10px;
+}
+
+.signup{
+  text-align: center;
+  font-family: Arial;
+  font-weight: 700;
+  font-size: 1.5rem;
+  padding: 10px;
+}
+
+.other-options {
+  display: flex;
+  flex-basis: 100%;
+  align-items: center;
+  color: rgba(0, 0, 0, 0.35);
+  margin: 8px 0px;
+}
+
+.other-options::before,
+.other-options::after {
+  content: "";
+  flex-grow: 1;
+  background: rgba(0, 0, 0, 0.35);
+  height: 1px;
+  font-size: 0px;
+  line-height: 0px;
+  margin: 0px 8px;
+}
   
-  input[type="number"] {
-    width: 100%;
-    padding: 5px;
-    margin-bottom: 10px;
-  }
+input {
+  width: 100%;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-family: Arial;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
   
-  button {
-    padding: 10px 20px;
-  }
-  
-  label {
-    display: block;
-    margin-bottom: 5px;
-  }
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-family: Arial;
+  padding-bottom: 5px;
+}
+
+.signup-options{
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  padding: 10px;
+}
+
+input.google-add{
+  background-image: url(google.png); 
+  background-color: transparent; 
+  background-repeat: no-repeat; 
+  background-position: 5px;
+  padding-left: 20px;
+  background-size: 20px;
+  width: 175px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+input.facebook-add{
+  background-image: url(fbook.jfif); 
+  background-color: transparent; 
+  background-repeat: no-repeat; 
+  background-position: 5px;
+  padding-left: 30px;
+  width: 175px;
+  background-size: 30px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.input-signup{
+  background-color: blue;
+  color: #ccc;
+  cursor: pointer;
+  font-weight: bold;
+  border: none;
+}
+
+.input-signup:hover{
+  background-color: rgb(37, 37, 216);
+}
+
+.email{
+  background:url(email.png) no-repeat right;
+  background-size: 2rem;
+}
+
+.password{
+  background: url(key.png) no-repeat right;
+  background-size: 2rem;
+}
+
+.confirm-password{
+  background: url(key.png) no-repeat right;
+  background-size: 2rem;
+}
+
+.form-par{
+  text-align: center;
+  font-family: Arial;
+}
+
+a{
+  text-decoration: none;
+}
