@@ -68,7 +68,7 @@ label {
 .signup-options{
   display: flex;
   justify-content: center;
-  gap: 5px;
+  gap: 2px;
   padding: 10px;
 }
 
@@ -82,6 +82,11 @@ input.google-add{
   width: 175px;
   vertical-align: middle;
   cursor: pointer;
+}
+
+input.google-add:hover{
+  border: none;
+  box-shadow: 10px 10px 10px 10px;
 }
 
 input.facebook-add{

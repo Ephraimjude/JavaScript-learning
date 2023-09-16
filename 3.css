@@ -612,6 +612,7 @@ hr{
   margin-top: 40px;
   background: #e9e4e4;
   height: 700px;
+  min-height: -moz-fit-content;
   min-height: fit-content;
   min-width: 100%;
 }
@@ -1527,6 +1528,7 @@ footer{
 }
 
 .security-intro input{
+  width: -moz-fit-content;
   width: fit-content;
   font-size: .9rem;
 }
